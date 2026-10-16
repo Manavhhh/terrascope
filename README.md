@@ -47,8 +47,9 @@ The platform answers the central scientific question:
 
 ### Frontend:
 - **Framework:** React 19 + TypeScript (strict mode) + Vite.
-- **Styling:** Vanilla CSS design system via Tailwind CSS with custom Deep Space Mission Control design tokens.
-- **3D Geospatial Engine:** CesiumJS with `vite-plugin-cesium`, custom orbit trajectories, georeferenced swath overlays, and automatic fallback to CartoDB Dark Matter / OpenStreetMap tiles (guaranteeing 100% offline & out-of-the-box reliability without requiring paid Cesium Ion tokens).
+- **Styling:** Disciplined Obsidian Telemetry SaaS design system using **Geist Sans** across all headlines and body copy, with **Geist Mono** for metrics, coordinates, and telemetry.
+- **3D Geospatial Engine:** CesiumJS with smooth cursor-directed zoom (mouse wheel ray-picking to cursor, double-click zoom to Earth surface, right-click drag, and on-screen `[+]`/`[-]` controls), active satellite orbit paths, and georeferenced swath polygons.
+- **Figma Color Combination Palettes:** Dynamic GIS false-color scales (Spectral InSAR Fringe, Bipolar Geodesy Subsidence/Uplift, Hydrological Flood Inundation, and Agricultural Canopy Biomass) with live synchronizing scale bars.
 - **Temporal Analytics:** Recharts for interactive backscatter, line-of-sight displacement, and coherence evolution.
 - **Icons:** Lucide React.
 
