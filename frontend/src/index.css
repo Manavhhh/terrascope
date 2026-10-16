@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-space: #0a0d14;
+    --surface-lowest: #0a0d14;
+    --surface-low: #0f131d;
+    --surface: #121722;
+    --surface-container: #161c29;
+    --surface-high: #1c2333;
+    --surface-highest: #232c3f;
+    
+    --primary-cyan: #00d8f6;
+    --primary-glow: rgba(0, 216, 246, 0.25);
+    --secondary-violet: #818cf8;
+    --tertiary-emerald: #10b981;
+    --telemetry-amber: #f59e0b;
+    --hazard-crimson: #f43f5e;
+    
+    --on-surface: #f1f5f9;
+    --on-surface-variant: #94a3b8;
+    --outline: #64748b;
+    --outline-subtle: rgba(255, 255, 255, 0.08);
+    --border-subtle: #1e2536;
+  }
+
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0a0d14;
+    color: #f1f5f9;
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.01em;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Typography Classes (Geist Sans across all headlines and body) */
+.font-display {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.font-headline {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-body {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.font-mono-tech {
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-feature-settings: "tnum" 1;
+  letter-spacing: -0.01em;
+}
+
+/* Disciplined Production SaaS Glassmorphic Surfaces (Obsidian Telemetry) */
+.glass-cockpit {
+  background: rgba(18, 23, 34, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #1e2536;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+}
+
+.glass-cockpit-high {
+  background: rgba(22, 28, 41, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid #1e2536;
+  box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.65);
+}
+
+.glass-pill {
+  background: rgba(22, 28, 41, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #1e2536;
+}
+
+.glass-pill:hover {
+  background: rgba(28, 35, 51, 0.9);
+  border-color: #283347;
+}
+
+/* Minimal Scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 13, 20, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Tech Grid Pattern Background */
+.tech-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Cesium Widget Overrides */
+.cesium-widget {
+  width: 100% !important;
+  height: 100% !important;
+  touch-action: none;
+}
+
+.cesium-widget canvas {
+  width: 100% !important;
+  height: 100% !important;
+  touch-action: none;
+  cursor: grab;
+}
+
+.cesium-widget canvas:active {
+  cursor: grabbing;
+}
+
+.cesium-viewer-bottom {
+  display: none !important;
+}
+
+.cesium-credit-logoContainer,
+.cesium-widget-credits {
+  display: none !important;
+}
