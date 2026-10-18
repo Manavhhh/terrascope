@@ -1,0 +1,1504 @@
+{
+  "demos": [
+    {
+      "investigation_id": "INV-EARTHQUAKE-TURKEY",
+      "title": "Kahramanmara\u015f M7.8 Rupture: InSAR Co-Seismic Fault Slip & Deformation",
+      "category": "ground_deformation",
+      "location_name": "East Anatolian Fault, Kahramanmara\u015f, T\u00fcrkiye",
+      "coordinates": [
+        36.92,
+        37.58,
+        450000.0
+      ],
+      "question": "What is the magnitude, spatial extent, and asymmetry of crustal surface displacement along the East Anatolian Fault rupture?",
+      "data_source": "Calibrated L-band InSAR Interferometric Pair (L2_GUNW Proxy)",
+      "observation_dates": [
+        "2023-01-28T03:42:15Z",
+        "2023-02-09T03:42:15Z"
+      ],
+      "summary": "Analysis of ascending L-band interferometric phase reveals severe sinistral strike-slip displacement across the East Anatolian Fault trace. Line-of-sight (LOS) motion reaches -42.4 cm (relative retreat) on the west flank and +38.6 cm (relative advance) on the east flank, spanning over 2,800 km\u00b2.",
+      "methodology": "Two geocoded single-look complex (SLC) SAR scenes were interferometrically combined, flattened using Copernicus 30m DEM, adaptive Goldstein phase filtered, and unwrapped using SNAPHU minimum-cost flow algorithm. Coherence threshold gamma >= 0.35.",
+      "limitations": "1D Line-of-Sight projection requires 3D decomposition with descending track for pure strike-slip vs dip-slip separation. Immediate fault gouge zone (<2km) suffers decorrelation.",
+      "source_documentation_url": "https://nisar.jpl.nasa.gov/mission/data-products/",
+      "product_a": {
+        "product_id": "NISAR_DEMO_GUNW_20230128_TURKEY_PRE",
+        "title": "NISAR L-SAR GUNW - East Anatolian Fault (Pre-Seismic Baseline)",
+        "mission": "NISAR (Calibrated InSAR Proxy)",
+        "sensor": "L-SAR",
+        "platform": "NISAR-SIM",
+        "acquisition_date": "2023-01-28T03:42:15Z",
+        "processing_level": "L2_GUNW",
+        "polarization": "HH",
+        "orbit_direction": "ASCENDING",
+        "relative_orbit": 124,
+        "footprint_geojson": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                35.8,
+                36.5
+              ],
+              [
+                37.8,
+                36.5
+              ],
+              [
+                37.8,
+                38.2
+              ],
+              [
+                35.8,
+                38.2
+              ],
+              [
+                35.8,
+                36.5
+              ]
+            ]
+          ]
+        },
+        "source_status": "DEMO_CALIBRATED",
+        "download_url": null,
+        "source_url": "https://nisar.jpl.nasa.gov",
+        "file_size_mb": 420.0,
+        "is_demo": true
+      },
+      "product_b": {
+        "product_id": "NISAR_DEMO_GUNW_20230209_TURKEY_POST",
+        "title": "NISAR L-SAR GUNW - East Anatolian Fault (Co-Seismic Rupture)",
+        "mission": "NISAR (Calibrated InSAR Proxy)",
+        "sensor": "L-SAR",
+        "platform": "NISAR-SIM",
+        "acquisition_date": "2023-02-09T03:42:15Z",
+        "processing_level": "L2_GUNW",
+        "polarization": "HH",
+        "orbit_direction": "ASCENDING",
+        "relative_orbit": 124,
+        "footprint_geojson": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                35.8,
+                36.5
+              ],
+              [
+                37.8,
+                36.5
+              ],
+              [
+                37.8,
+                38.2
+              ],
+              [
+                35.8,
+                38.2
+              ],
+              [
+                35.8,
+                36.5
+              ]
+            ]
+          ]
+        },
+        "source_status": "DEMO_CALIBRATED",
+        "download_url": null,
+        "source_url": "https://nisar.jpl.nasa.gov",
+        "file_size_mb": 435.0,
+        "is_demo": true
+      },
+      "precomputed_analysis": {
+        "analysis_id": "ANL-DD29136394",
+        "timestamp": "2026-10-18T20:36:22.017766Z",
+        "category": "ground_deformation",
+        "algorithm_name": "DInSAR Phase Unwrapping & Line-of-Sight Inversion",
+        "algorithm_version": "NISAR-GUNW-v2.1",
+        "input_products": [
+          {
+            "product_id": "NISAR_DEMO_GUNW_20230128_TURKEY_PRE",
+            "title": "NISAR L-SAR GUNW - East Anatolian Fault (Pre-Seismic Baseline)",
+            "mission": "NISAR (Calibrated InSAR Proxy)",
+            "sensor": "L-SAR",
+            "platform": "NISAR-SIM",
+            "acquisition_date": "2023-01-28T03:42:15Z",
+            "processing_level": "L2_GUNW",
+            "polarization": "HH",
+            "orbit_direction": "ASCENDING",
+            "relative_orbit": 124,
+            "footprint_geojson": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    35.8,
+                    36.5
+                  ],
+                  [
+                    37.8,
+                    36.5
+                  ],
+                  [
+                    37.8,
+                    38.2
+                  ],
+                  [
+                    35.8,
+                    38.2
+                  ],
+                  [
+                    35.8,
+                    36.5
+                  ]
+                ]
+              ]
+            },
+            "source_status": "DEMO_CALIBRATED",
+            "download_url": null,
+            "source_url": "https://nisar.jpl.nasa.gov",
+            "file_size_mb": 420.0,
+            "is_demo": true
+          },
+          {
+            "product_id": "NISAR_DEMO_GUNW_20230209_TURKEY_POST",
+            "title": "NISAR L-SAR GUNW - East Anatolian Fault (Co-Seismic Rupture)",
+            "mission": "NISAR (Calibrated InSAR Proxy)",
+            "sensor": "L-SAR",
+            "platform": "NISAR-SIM",
+            "acquisition_date": "2023-02-09T03:42:15Z",
+            "processing_level": "L2_GUNW",
+            "polarization": "HH",
+            "orbit_direction": "ASCENDING",
+            "relative_orbit": 124,
+            "footprint_geojson": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    35.8,
+                    36.5
+                  ],
+                  [
+                    37.8,
+                    36.5
+                  ],
+                  [
+                    37.8,
+                    38.2
+                  ],
+                  [
+                    35.8,
+                    38.2
+                  ],
+                  [
+                    35.8,
+                    36.5
+                  ]
+                ]
+              ]
+            },
+            "source_status": "DEMO_CALIBRATED",
+            "download_url": null,
+            "source_url": "https://nisar.jpl.nasa.gov",
+            "file_size_mb": 435.0,
+            "is_demo": true
+          }
+        ],
+        "metrics": {
+          "mean_change_value": -0.31,
+          "max_change_value": 42.18,
+          "min_change_value": -42.2,
+          "units": "centimeters (LOS)",
+          "affected_area_km2": 25079.4,
+          "ground_displacement_cm": 42.2,
+          "coherence_loss_ratio": 0.34,
+          "confidence_score": 0.93,
+          "quality_grade": "High"
+        },
+        "evidence_summary": "Interferometric phase difference reveals severe strike-slip crustal displacement: maximum LOS retreat of -42.2 cm (west flank) and advance of +42.2 cm (east flank). Severe decorrelation (gamma < 0.35) outlines the active primary rupture trace across 25079.4 km\u00b2.",
+        "scientific_interpretation": "Measurements are consistent with a shallow sinistral strike-slip rupture event. Phase unwrapping coherence remains high outside the immediate fault gouge zone. Line-of-sight measurements reflect projected 3D ground deformation along the ascending satellite look angle.",
+        "limitations": [
+          "Line-of-Sight (LOS) 1D projection: true horizontal slip requires decomposition with opposing descending track observations.",
+          "Phase decorrelation within 2 km of the fault trace masks near-field rupture discontinuities.",
+          "Atmospheric tropospheric phase delay unmodeled; local elevation gradient may introduce minor error (+/- 1.5 cm)."
+        ],
+        "geojson_layers": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      37.699999999999996,
+                      36.6
+                    ],
+                    [
+                      37.699999999999996,
+                      38.1
+                    ],
+                    [
+                      36.849999999999994,
+                      38.1
+                    ],
+                    [
+                      36.849999999999994,
+                      36.6
+                    ],
+                    [
+                      37.699999999999996,
+                      36.6
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "zone_id": "DISP_ZONE_EAST",
+                "classification": "LOS Crustal Uplift / Advance",
+                "mean_displacement_cm": 30.4,
+                "peak_displacement_cm": 42.2,
+                "area_km2": 12539.68,
+                "coherence_grade": "High (gamma >= 0.68)",
+                "confidence": 0.94
+              }
+            },
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      36.75,
+                      36.6
+                    ],
+                    [
+                      36.75,
+                      38.1
+                    ],
+                    [
+                      35.9,
+                      38.1
+                    ],
+                    [
+                      35.9,
+                      36.6
+                    ],
+                    [
+                      36.75,
+                      36.6
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "zone_id": "DISP_ZONE_WEST",
+                "classification": "LOS Crustal Subsidence / Retreat",
+                "mean_displacement_cm": -32.1,
+                "peak_displacement_cm": -42.2,
+                "area_km2": 12539.68,
+                "coherence_grade": "High (gamma >= 0.65)",
+                "confidence": 0.92
+              }
+            },
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      36.839999999999996,
+                      36.55
+                    ],
+                    [
+                      36.839999999999996,
+                      38.150000000000006
+                    ],
+                    [
+                      36.76,
+                      38.150000000000006
+                    ],
+                    [
+                      36.76,
+                      36.55
+                    ],
+                    [
+                      36.839999999999996,
+                      36.55
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "zone_id": "RUPTURE_DECORRELATION_TRACE",
+                "classification": "Fault Rupture Decorrelation Trace",
+                "mean_displacement_cm": 0.0,
+                "area_km2": 1258.89,
+                "coherence_grade": "Low Decorrelation (gamma < 0.35)",
+                "confidence": 0.96
+              }
+            }
+          ]
+        },
+        "time_series_data": [
+          {
+            "date": "2023-01-28",
+            "displacement_cm": 0.0,
+            "coherence": 0.82
+          },
+          {
+            "date": "2023-02-03",
+            "displacement_cm": -0.8,
+            "coherence": 0.81
+          },
+          {
+            "date": "2023-02-09",
+            "displacement_cm": 42.2,
+            "coherence": 0.62
+          },
+          {
+            "date": "2023-02-15",
+            "displacement_cm": 44.3,
+            "coherence": 0.58
+          },
+          {
+            "date": "2023-02-27",
+            "displacement_cm": 45.6,
+            "coherence": 0.6
+          }
+        ],
+        "raster_overlay_url": null,
+        "provenance": {
+          "processing_node": "terrascope_core_insar",
+          "radar_band": "L-band (24.0 cm)",
+          "polarization": "HH",
+          "temporal_baseline_days": 12,
+          "perpendicular_baseline_meters": 64.2,
+          "phase_filtering": "Goldstein Adaptive Filter (alpha=0.6)",
+          "unwrapping_method": "SNAPHU (Statistical-Cost Network-Flow Phase-Unwrapping)"
+        },
+        "is_demo_data": true
+      }
+    },
+    {
+      "investigation_id": "INV-FLOOD-BRAHMAPUTRA",
+      "title": "Brahmaputra Basin Severe Inundation: Radar Backscatter Specular Loss",
+      "category": "flood_wetland",
+      "location_name": "Brahmaputra River Valley, Assam, India",
+      "coordinates": [
+        92.8,
+        26.6,
+        550000.0
+      ],
+      "question": "How much agricultural land and riparian wetland was inundated during peak monsoon flooding, penetrating seasonal cloud cover?",
+      "data_source": "NISAR-ISRO Joint Coverage L-band GCOV (Geocoded Calibrated Backscatter)",
+      "observation_dates": [
+        "2024-06-12T00:54:10Z",
+        "2024-07-04T00:54:10Z"
+      ],
+      "summary": "Multi-temporal SAR backscatter ratio identifies 1,420 km\u00b2 of inundated floodplain. Open water generates a steep -6.4 dB specular reflection loss, while flooded marshes exhibit +3.2 dB double-bounce enhancement.",
+      "methodology": "Terrain-flattened Gamma-0 radiometrically calibrated backscatter was speckle-filtered (Refined Lee 7x7). Log-ratio differencing was segmented using an automated bimodal Otsu thresholding method.",
+      "limitations": "Capillary waves generated by high surface winds can elevate open water backscatter, occasionally underestimating flood extent. Dense closed forest canopies attenuate L-band signal.",
+      "source_documentation_url": "https://bhoonidhi.nrsc.gov.in",
+      "product_a": {
+        "product_id": "NISAR_DEMO_GCOV_20240612_ASSAM_PRE",
+        "title": "NISAR L-SAR GCOV - Brahmaputra Basin (Pre-Monsoon Normal)",
+        "mission": "NISAR (ISRO-NASA Joint Coverage)",
+        "sensor": "L-SAR",
+        "platform": "NISAR-SIM",
+        "acquisition_date": "2024-06-12T00:54:10Z",
+        "processing_level": "L2_GCOV",
+        "polarization": "HH+HV",
+        "orbit_direction": "DESCENDING",
+        "relative_orbit": 47,
+        "footprint_geojson": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                91.2,
+                25.8
+              ],
+              [
+                93.8,
+                25.8
+              ],
+              [
+                93.8,
+                27.2
+              ],
+              [
+                91.2,
+                27.2
+              ],
+              [
+                91.2,
+                25.8
+              ]
+            ]
+          ]
+        },
+        "source_status": "DEMO_CALIBRATED",
+        "download_url": null,
+        "source_url": "https://bhoonidhi.nrsc.gov.in",
+        "file_size_mb": 310.0,
+        "is_demo": true
+      },
+      "product_b": {
+        "product_id": "NISAR_DEMO_GCOV_20240704_ASSAM_FLOOD",
+        "title": "NISAR L-SAR GCOV - Brahmaputra Basin (Peak Inundation Phase)",
+        "mission": "NISAR (ISRO-NASA Joint Coverage)",
+        "sensor": "L-SAR",
+        "platform": "NISAR-SIM",
+        "acquisition_date": "2024-07-04T00:54:10Z",
+        "processing_level": "L2_GCOV",
+        "polarization": "HH+HV",
+        "orbit_direction": "DESCENDING",
+        "relative_orbit": 47,
+        "footprint_geojson": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                91.2,
+                25.8
+              ],
+              [
+                93.8,
+                25.8
+              ],
+              [
+                93.8,
+                27.2
+              ],
+              [
+                91.2,
+                27.2
+              ],
+              [
+                91.2,
+                25.8
+              ]
+            ]
+          ]
+        },
+        "source_status": "DEMO_CALIBRATED",
+        "download_url": null,
+        "source_url": "https://bhoonidhi.nrsc.gov.in",
+        "file_size_mb": 315.0,
+        "is_demo": true
+      },
+      "precomputed_analysis": {
+        "analysis_id": "ANL-EDF8E77622",
+        "timestamp": "2026-10-18T20:36:22.022127Z",
+        "category": "flood_wetland",
+        "algorithm_name": "Multi-Temporal SAR Backscatter Log-Ratio Inundation Engine",
+        "algorithm_version": "NISAR-GCOV-WATER-v3.0",
+        "input_products": [
+          {
+            "product_id": "NISAR_DEMO_GCOV_20240612_ASSAM_PRE",
+            "title": "NISAR L-SAR GCOV - Brahmaputra Basin (Pre-Monsoon Normal)",
+            "mission": "NISAR (ISRO-NASA Joint Coverage)",
+            "sensor": "L-SAR",
+            "platform": "NISAR-SIM",
+            "acquisition_date": "2024-06-12T00:54:10Z",
+            "processing_level": "L2_GCOV",
+            "polarization": "HH+HV",
+            "orbit_direction": "DESCENDING",
+            "relative_orbit": 47,
+            "footprint_geojson": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    91.2,
+                    25.8
+                  ],
+                  [
+                    93.8,
+                    25.8
+                  ],
+                  [
+                    93.8,
+                    27.2
+                  ],
+                  [
+                    91.2,
+                    27.2
+                  ],
+                  [
+                    91.2,
+                    25.8
+                  ]
+                ]
+              ]
+            },
+            "source_status": "DEMO_CALIBRATED",
+            "download_url": null,
+            "source_url": "https://bhoonidhi.nrsc.gov.in",
+            "file_size_mb": 310.0,
+            "is_demo": true
+          },
+          {
+            "product_id": "NISAR_DEMO_GCOV_20240704_ASSAM_FLOOD",
+            "title": "NISAR L-SAR GCOV - Brahmaputra Basin (Peak Inundation Phase)",
+            "mission": "NISAR (ISRO-NASA Joint Coverage)",
+            "sensor": "L-SAR",
+            "platform": "NISAR-SIM",
+            "acquisition_date": "2024-07-04T00:54:10Z",
+            "processing_level": "L2_GCOV",
+            "polarization": "HH+HV",
+            "orbit_direction": "DESCENDING",
+            "relative_orbit": 47,
+            "footprint_geojson": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    91.2,
+                    25.8
+                  ],
+                  [
+                    93.8,
+                    25.8
+                  ],
+                  [
+                    93.8,
+                    27.2
+                  ],
+                  [
+                    91.2,
+                    27.2
+                  ],
+                  [
+                    91.2,
+                    25.8
+                  ]
+                ]
+              ]
+            },
+            "source_status": "DEMO_CALIBRATED",
+            "download_url": null,
+            "source_url": "https://bhoonidhi.nrsc.gov.in",
+            "file_size_mb": 315.0,
+            "is_demo": true
+          }
+        ],
+        "metrics": {
+          "mean_change_value": -6.4,
+          "max_change_value": 3.2,
+          "min_change_value": -9.8,
+          "units": "decibels (dB)",
+          "affected_area_km2": 15501.0,
+          "ground_displacement_cm": null,
+          "coherence_loss_ratio": 0.62,
+          "confidence_score": 0.91,
+          "quality_grade": "High"
+        },
+        "evidence_summary": "Multi-temporal backscatter log-ratio reveals a -6.4 dB mean signal decrease characteristic of specular water scattering across 15501.0 km\u00b2. Adjacent emergent wetland shows localized +3.2 dB enhancement consistent with double-bounce reflections.",
+        "scientific_interpretation": "Observations indicate extensive seasonal riverine overbank flooding. L-band radar penetrates light canopy cover, allowing water detection beneath emergent vegetation where optical sensors are occluded by cloud cover and foliage.",
+        "limitations": [
+          "High surface roughness from high wind speeds can raise water backscatter, occasionally causing underestimation of flood boundary.",
+          "Dense double-canopy forest may obscure shallow standing water beneath unbroken foliage.",
+          "Requires validation with optical Sentinel-2 or MODIS imagery once cloud deck clears."
+        ],
+        "geojson_layers": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      93.64999999999999,
+                      26.7
+                    ],
+                    [
+                      93.64999999999999,
+                      26.3
+                    ],
+                    [
+                      92.9,
+                      26.3
+                    ],
+                    [
+                      92.9,
+                      26.0
+                    ],
+                    [
+                      92.1,
+                      26.0
+                    ],
+                    [
+                      92.1,
+                      26.3
+                    ],
+                    [
+                      91.35000000000001,
+                      26.3
+                    ],
+                    [
+                      91.35000000000001,
+                      26.7
+                    ],
+                    [
+                      92.1,
+                      26.7
+                    ],
+                    [
+                      92.1,
+                      27.0
+                    ],
+                    [
+                      92.9,
+                      27.0
+                    ],
+                    [
+                      92.9,
+                      26.7
+                    ],
+                    [
+                      93.64999999999999,
+                      26.7
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "zone_id": "INUNDATION_PRIMARY_CORRIDOR",
+                "classification": "Open Surface Water Inundation",
+                "mean_backscatter_delta_db": -6.4,
+                "peak_drop_db": -9.8,
+                "area_km2": 15501.0,
+                "confidence": 0.95,
+                "scattering_mechanism": "Specular Reflection (Radar Signal Dissipation)"
+              }
+            },
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      92.7,
+                      26.75
+                    ],
+                    [
+                      92.7,
+                      27.099999999999998
+                    ],
+                    [
+                      92.3,
+                      27.099999999999998
+                    ],
+                    [
+                      92.3,
+                      26.75
+                    ],
+                    [
+                      92.7,
+                      26.75
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "zone_id": "VEGETATION_SUBMERGED_MARSH",
+                "classification": "Submerged Emergent Wetland / Double Bounce",
+                "mean_backscatter_delta_db": 3.2,
+                "area_km2": 4340.3,
+                "confidence": 0.88,
+                "scattering_mechanism": "Trunk-Water Double-Bounce Enhancement"
+              }
+            }
+          ]
+        },
+        "time_series_data": [
+          {
+            "date": "2024-05-15",
+            "backscatter_db": -11.2,
+            "water_extent_km2": 240
+          },
+          {
+            "date": "2024-06-12",
+            "backscatter_db": -12.1,
+            "water_extent_km2": 310
+          },
+          {
+            "date": "2024-06-25",
+            "backscatter_db": -15.4,
+            "water_extent_km2": 890
+          },
+          {
+            "date": "2024-07-04",
+            "backscatter_db": -18.5,
+            "water_extent_km2": 15501.0
+          },
+          {
+            "date": "2024-07-16",
+            "backscatter_db": -16.2,
+            "water_extent_km2": 950
+          }
+        ],
+        "raster_overlay_url": null,
+        "provenance": {
+          "processing_node": "terrascope_gcov_processor",
+          "radiometric_calibration": "Gamma-0 (Terrain Flattened)",
+          "speckle_filter": "Refined Lee Filter (7x7 window)",
+          "polarizations_analyzed": "HH and HV",
+          "threshold_method": "Bimodal Otsu Log-Ratio Partitioning"
+        },
+        "is_demo_data": true
+      }
+    },
+    {
+      "investigation_id": "INV-AGRI-CENTRAL-VALLEY",
+      "title": "San Joaquin Valley Agro-Ecosystem: Polarimetric RVI Phenology & Canopy Biomass",
+      "category": "agriculture",
+      "location_name": "San Joaquin Valley, California, USA",
+      "coordinates": [
+        -119.8,
+        36.6,
+        420000.0
+      ],
+      "question": "Can quad-polarimetric L-band radar track crop canopy expansion and distinguish volumetric scattering from bare agricultural soil?",
+      "data_source": "NISAR L-SAR Full Polarimetric (QUAD) L2_GCOV Science Demonstration",
+      "observation_dates": [
+        "2024-03-15T14:10:00Z",
+        "2024-07-22T14:10:00Z"
+      ],
+      "summary": "Quad-polarimetric decomposition tracks rapid crop canopy closure across 980 km\u00b2 of farmland. Radar Vegetation Index (RVI) increases by +0.38, driven by dominant HV volume scattering within orchard and row crops.",
+      "methodology": "Calculated Radar Vegetation Index RVI = 4*HV / (HH + HV) across pre- and peak-season observations, supported by Freeman-Durden 3-component polarimetric decomposition.",
+      "limitations": "Significant topsoil dielectric moisture fluctuations immediately following irrigation events can bias the HH co-polarized return. Crop row azimuth alignment creates anisotropic returns.",
+      "source_documentation_url": "https://nisar.jpl.nasa.gov/mission/data-products/",
+      "product_a": {
+        "product_id": "NISAR_DEMO_GCOV_20240315_CALIFORNIA_EARLY",
+        "title": "NISAR L-SAR GCOV - San Joaquin Valley (Emergence Phase)",
+        "mission": "NISAR (NASA Segment)",
+        "sensor": "L-SAR",
+        "platform": "NISAR-SIM",
+        "acquisition_date": "2024-03-15T14:10:00Z",
+        "processing_level": "L2_GCOV",
+        "polarization": "QUAD",
+        "orbit_direction": "ASCENDING",
+        "relative_orbit": 98,
+        "footprint_geojson": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -120.8,
+                36.0
+              ],
+              [
+                -118.8,
+                36.0
+              ],
+              [
+                -118.8,
+                37.4
+              ],
+              [
+                -120.8,
+                37.4
+              ],
+              [
+                -120.8,
+                36.0
+              ]
+            ]
+          ]
+        },
+        "source_status": "DEMO_CALIBRATED",
+        "download_url": null,
+        "source_url": "https://nisar.jpl.nasa.gov",
+        "file_size_mb": 540.0,
+        "is_demo": true
+      },
+      "product_b": {
+        "product_id": "NISAR_DEMO_GCOV_20240722_CALIFORNIA_PEAK",
+        "title": "NISAR L-SAR GCOV - San Joaquin Valley (Full Canopy & Irrigation)",
+        "mission": "NISAR (NASA Segment)",
+        "sensor": "L-SAR",
+        "platform": "NISAR-SIM",
+        "acquisition_date": "2024-07-22T14:10:00Z",
+        "processing_level": "L2_GCOV",
+        "polarization": "QUAD",
+        "orbit_direction": "ASCENDING",
+        "relative_orbit": 98,
+        "footprint_geojson": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -120.8,
+                36.0
+              ],
+              [
+                -118.8,
+                36.0
+              ],
+              [
+                -118.8,
+                37.4
+              ],
+              [
+                -120.8,
+                37.4
+              ],
+              [
+                -120.8,
+                36.0
+              ]
+            ]
+          ]
+        },
+        "source_status": "DEMO_CALIBRATED",
+        "download_url": null,
+        "source_url": "https://nisar.jpl.nasa.gov",
+        "file_size_mb": 550.0,
+        "is_demo": true
+      },
+      "precomputed_analysis": {
+        "analysis_id": "ANL-104C31D2CC",
+        "timestamp": "2026-10-18T20:36:22.025850Z",
+        "category": "agriculture",
+        "algorithm_name": "Polarimetric Radar Vegetation Index (RVI) Multi-Temporal Engine",
+        "algorithm_version": "NISAR-POL-RVI-v1.4",
+        "input_products": [
+          {
+            "product_id": "NISAR_DEMO_GCOV_20240315_CALIFORNIA_EARLY",
+            "title": "NISAR L-SAR GCOV - San Joaquin Valley (Emergence Phase)",
+            "mission": "NISAR (NASA Segment)",
+            "sensor": "L-SAR",
+            "platform": "NISAR-SIM",
+            "acquisition_date": "2024-03-15T14:10:00Z",
+            "processing_level": "L2_GCOV",
+            "polarization": "QUAD",
+            "orbit_direction": "ASCENDING",
+            "relative_orbit": 98,
+            "footprint_geojson": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    -120.8,
+                    36.0
+                  ],
+                  [
+                    -118.8,
+                    36.0
+                  ],
+                  [
+                    -118.8,
+                    37.4
+                  ],
+                  [
+                    -120.8,
+                    37.4
+                  ],
+                  [
+                    -120.8,
+                    36.0
+                  ]
+                ]
+              ]
+            },
+            "source_status": "DEMO_CALIBRATED",
+            "download_url": null,
+            "source_url": "https://nisar.jpl.nasa.gov",
+            "file_size_mb": 540.0,
+            "is_demo": true
+          },
+          {
+            "product_id": "NISAR_DEMO_GCOV_20240722_CALIFORNIA_PEAK",
+            "title": "NISAR L-SAR GCOV - San Joaquin Valley (Full Canopy & Irrigation)",
+            "mission": "NISAR (NASA Segment)",
+            "sensor": "L-SAR",
+            "platform": "NISAR-SIM",
+            "acquisition_date": "2024-07-22T14:10:00Z",
+            "processing_level": "L2_GCOV",
+            "polarization": "QUAD",
+            "orbit_direction": "ASCENDING",
+            "relative_orbit": 98,
+            "footprint_geojson": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    -120.8,
+                    36.0
+                  ],
+                  [
+                    -118.8,
+                    36.0
+                  ],
+                  [
+                    -118.8,
+                    37.4
+                  ],
+                  [
+                    -120.8,
+                    37.4
+                  ],
+                  [
+                    -120.8,
+                    36.0
+                  ]
+                ]
+              ]
+            },
+            "source_status": "DEMO_CALIBRATED",
+            "download_url": null,
+            "source_url": "https://nisar.jpl.nasa.gov",
+            "file_size_mb": 550.0,
+            "is_demo": true
+          }
+        ],
+        "metrics": {
+          "mean_change_value": 0.38,
+          "max_change_value": 0.55,
+          "min_change_value": -0.29,
+          "units": "RVI index (0.0 to 1.0)",
+          "affected_area_km2": 6249.3,
+          "ground_displacement_cm": null,
+          "coherence_loss_ratio": null,
+          "confidence_score": 0.88,
+          "quality_grade": "Moderate"
+        },
+        "evidence_summary": "Dual-polarization cross-ratio analysis indicates a mean RVI increase of +0.38 over 6249.3 km\u00b2 of irrigated agricultural parcels, representing dense volumetric canopy scattering.",
+        "scientific_interpretation": "Volume scattering in L-band HV channel increases proportionally with canopy structural complexity and fresh biomass. The temporal progression demonstrates successful crop emergence and canopy closure during peak growing season.",
+        "limitations": [
+          "High soil moisture from recent drip or flood irrigation increases dielectric permittivity, influencing HH returns.",
+          "Row orientation relative to satellite azimuth look angle introduces azimuthal anisotropy up to 1.2 dB.",
+          "Ground truthing with crop classification maps recommended."
+        ],
+        "geojson_layers": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -119.89999999999999,
+                      36.15
+                    ],
+                    [
+                      -119.89999999999999,
+                      36.6
+                    ],
+                    [
+                      -120.6,
+                      36.6
+                    ],
+                    [
+                      -120.6,
+                      36.15
+                    ],
+                    [
+                      -119.89999999999999,
+                      36.15
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "parcel_id": "VALLEY_AG_SECTOR_SOUTH",
+                "classification": "Vigorous Crop Canopy Expansion",
+                "delta_rvi": 0.38,
+                "volume_scattering_ratio": "+4.2 dB",
+                "area_km2": 3137.8,
+                "confidence": 0.89
+              }
+            },
+            {
+              "type": "Feature",
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -119.0,
+                      36.800000000000004
+                    ],
+                    [
+                      -119.0,
+                      37.25
+                    ],
+                    [
+                      -119.7,
+                      37.25
+                    ],
+                    [
+                      -119.7,
+                      36.800000000000004
+                    ],
+                    [
+                      -119.0,
+                      36.800000000000004
+                    ]
+                  ]
+                ]
+              },
+              "properties": {
+                "parcel_id": "VALLEY_AG_SECTOR_NORTH",
+                "classification": "Post-Harvest / Soil Roughness Alteration",
+                "delta_rvi": -0.29,
+                "volume_scattering_ratio": "-3.1 dB",
+                "area_km2": 3111.4,
+                "confidence": 0.86
+              }
+            }
+          ]
+        },
+        "time_series_data": [
+          {
+            "date": "2024-03-01",
+            "rvi": 0.22,
+            "biomass_index": 35
+          },
+          {
+            "date": "2024-03-15",
+            "rvi": 0.31,
+            "biomass_index": 52
+          },
+          {
+            "date": "2024-05-18",
+            "rvi": 0.54,
+            "biomass_index": 84
+          },
+          {
+            "date": "2024-07-22",
+            "rvi": 0.69,
+            "biomass_index": 115
+          },
+          {
+            "date": "2024-08-30",
+            "rvi": 0.45,
+            "biomass_index": 72
+          }
+        ],
+        "raster_overlay_url": null,
+        "provenance": {
+          "processing_node": "terrascope_pol_engine",
+          "polarimetric_channels": "HH, HV, VH, VV",
+          "decomposition_scheme": "Freeman-Durden 3-Component Polarimetric Decomposition",
+          "speckle_filtering": "Boxcar Filter (5x5)"
+        },
+        "is_demo_data": true
+      }
+    }
+  ],
+  "events": [
+    {
+      "event_id": "EVT-2023-TURKEY-EQ",
+      "title": "Kahramanmara\u015f M7.8 Co-Seismic Surface Rupture",
+      "category": "ground_deformation",
+      "location_name": "East Anatolian Fault, Kahramanmara\u015f, T\u00fcrkiye",
+      "coordinates": [
+        36.92,
+        37.58
+      ],
+      "observation_date": "2023-02-09T03:42:15Z",
+      "severity": "CRITICAL",
+      "status": "confirmed",
+      "confidence": 0.96,
+      "description": "Major tectonic rupture with -42.4 cm to +38.6 cm differential InSAR line-of-sight crustal offset.",
+      "affected_area_km2": 2840.5,
+      "displacement_cm": 42.4,
+      "source_attribution": "USGS Earthquake Hazard / Calibrated InSAR Pair",
+      "product_ids": [
+        "NISAR_DEMO_GUNW_20230128_TURKEY_PRE",
+        "NISAR_DEMO_GUNW_20230209_TURKEY_POST"
+      ],
+      "is_demo": true
+    },
+    {
+      "event_id": "EVT-2024-ASSAM-FLOOD",
+      "title": "Assam Brahmaputra Valley Monsoon Inundation",
+      "category": "flood_wetland",
+      "location_name": "Brahmaputra Basin, Assam, India",
+      "coordinates": [
+        92.8,
+        26.6
+      ],
+      "observation_date": "2024-07-04T00:54:10Z",
+      "severity": "HIGH",
+      "status": "confirmed",
+      "confidence": 0.94,
+      "description": "Severe overbank river flooding with -6.4 dB radar specular reflection loss across riparian lowlands.",
+      "affected_area_km2": 1420.0,
+      "displacement_cm": null,
+      "source_attribution": "Central Water Commission (India) / ISRO Bhoonidhi SAR",
+      "product_ids": [
+        "NISAR_DEMO_GCOV_20240612_ASSAM_PRE",
+        "NISAR_DEMO_GCOV_20240704_ASSAM_FLOOD"
+      ],
+      "is_demo": true
+    },
+    {
+      "event_id": "EVT-2024-CALIFORNIA-AGRI",
+      "title": "San Joaquin Valley Agro-Ecosystem Phenology Cycle",
+      "category": "agriculture",
+      "location_name": "Central Valley, California, USA",
+      "coordinates": [
+        -119.8,
+        36.6
+      ],
+      "observation_date": "2024-07-22T14:10:00Z",
+      "severity": "MODERATE",
+      "status": "algorithmic_candidate",
+      "confidence": 0.88,
+      "description": "Seasonal crop canopy expansion detected via +0.38 Radar Vegetation Index (RVI) increase.",
+      "affected_area_km2": 980.0,
+      "displacement_cm": 2.8,
+      "source_attribution": "TERRA//SCOPE Multi-Temporal RVI Detector",
+      "product_ids": [
+        "NISAR_DEMO_GCOV_20240315_CALIFORNIA_EARLY",
+        "NISAR_DEMO_GCOV_20240722_CALIFORNIA_PEAK"
+      ],
+      "is_demo": true
+    },
+    {
+      "event_id": "EVT-2024-HIMALAYA-GLACIER",
+      "title": "Siachen / Karakoram Glacial Velocity Surge Candidate",
+      "category": "glacier_ice",
+      "location_name": "Siachen Glacier Basin, Western Himalayas",
+      "coordinates": [
+        77.1,
+        35.4
+      ],
+      "observation_date": "2024-08-15T02:10:00Z",
+      "severity": "MODERATE",
+      "status": "algorithmic_candidate",
+      "confidence": 0.82,
+      "description": "Accelerated glacier ice motion speckle-tracking displacement anomaly (~1.2 m/month).",
+      "affected_area_km2": 145.0,
+      "displacement_cm": 120.0,
+      "source_attribution": "TERRA//SCOPE Cryosphere Speckle-Tracking Algorithm",
+      "product_ids": [
+        "NISAR_S_SAR_GUNW_20240828T121545_088_HIM"
+      ],
+      "is_demo": false
+    },
+    {
+      "event_id": "EVT-2024-CANADA-WILDFIRE",
+      "title": "Boreal Forest Wildfire Coherence Decorrelation Scar",
+      "category": "wildfire",
+      "location_name": "Fort McMurray Boreal Zone, Alberta, Canada",
+      "coordinates": [
+        -111.4,
+        56.7
+      ],
+      "observation_date": "2024-06-08T11:20:00Z",
+      "severity": "HIGH",
+      "status": "confirmed",
+      "confidence": 0.91,
+      "description": "Acute coherence decorrelation (loss > 0.55) delineating crown and ground fire burn scar.",
+      "affected_area_km2": 680.0,
+      "displacement_cm": null,
+      "source_attribution": "Canadian Interagency Forest Fire Centre / ASF SAR",
+      "product_ids": [
+        "ASF_S1_20240608_CANADA_BURN"
+      ],
+      "is_demo": false
+    }
+  ],
+  "catalog": [
+    {
+      "product_id": "NISAR_DEMO_GUNW_20230128_TURKEY_PRE",
+      "title": "NISAR L-SAR GUNW - East Anatolian Fault (Pre-Seismic Baseline)",
+      "mission": "NISAR (Calibrated InSAR Proxy)",
+      "sensor": "L-SAR",
+      "platform": "NISAR-SIM",
+      "acquisition_date": "2023-01-28T03:42:15Z",
+      "processing_level": "L2_GUNW",
+      "polarization": "HH",
+      "orbit_direction": "ASCENDING",
+      "relative_orbit": 124,
+      "footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.8,
+              36.5
+            ],
+            [
+              37.8,
+              36.5
+            ],
+            [
+              37.8,
+              38.2
+            ],
+            [
+              35.8,
+              38.2
+            ],
+            [
+              35.8,
+              36.5
+            ]
+          ]
+        ]
+      },
+      "source_status": "DEMO_CALIBRATED",
+      "download_url": null,
+      "source_url": "https://nisar.jpl.nasa.gov",
+      "file_size_mb": 420.0,
+      "is_demo": true
+    },
+    {
+      "product_id": "NISAR_DEMO_GUNW_20230209_TURKEY_POST",
+      "title": "NISAR L-SAR GUNW - East Anatolian Fault (Co-Seismic Rupture)",
+      "mission": "NISAR (Calibrated InSAR Proxy)",
+      "sensor": "L-SAR",
+      "platform": "NISAR-SIM",
+      "acquisition_date": "2023-02-09T03:42:15Z",
+      "processing_level": "L2_GUNW",
+      "polarization": "HH",
+      "orbit_direction": "ASCENDING",
+      "relative_orbit": 124,
+      "footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.8,
+              36.5
+            ],
+            [
+              37.8,
+              36.5
+            ],
+            [
+              37.8,
+              38.2
+            ],
+            [
+              35.8,
+              38.2
+            ],
+            [
+              35.8,
+              36.5
+            ]
+          ]
+        ]
+      },
+      "source_status": "DEMO_CALIBRATED",
+      "download_url": null,
+      "source_url": "https://nisar.jpl.nasa.gov",
+      "file_size_mb": 435.0,
+      "is_demo": true
+    },
+    {
+      "product_id": "NISAR_DEMO_GCOV_20240612_ASSAM_PRE",
+      "title": "NISAR L-SAR GCOV - Brahmaputra Basin (Pre-Monsoon Normal)",
+      "mission": "NISAR (ISRO-NASA Joint Coverage)",
+      "sensor": "L-SAR",
+      "platform": "NISAR-SIM",
+      "acquisition_date": "2024-06-12T00:54:10Z",
+      "processing_level": "L2_GCOV",
+      "polarization": "HH+HV",
+      "orbit_direction": "DESCENDING",
+      "relative_orbit": 47,
+      "footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.2,
+              25.8
+            ],
+            [
+              93.8,
+              25.8
+            ],
+            [
+              93.8,
+              27.2
+            ],
+            [
+              91.2,
+              27.2
+            ],
+            [
+              91.2,
+              25.8
+            ]
+          ]
+        ]
+      },
+      "source_status": "DEMO_CALIBRATED",
+      "download_url": null,
+      "source_url": "https://bhoonidhi.nrsc.gov.in",
+      "file_size_mb": 310.0,
+      "is_demo": true
+    },
+    {
+      "product_id": "NISAR_DEMO_GCOV_20240704_ASSAM_FLOOD",
+      "title": "NISAR L-SAR GCOV - Brahmaputra Basin (Peak Inundation Phase)",
+      "mission": "NISAR (ISRO-NASA Joint Coverage)",
+      "sensor": "L-SAR",
+      "platform": "NISAR-SIM",
+      "acquisition_date": "2024-07-04T00:54:10Z",
+      "processing_level": "L2_GCOV",
+      "polarization": "HH+HV",
+      "orbit_direction": "DESCENDING",
+      "relative_orbit": 47,
+      "footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              91.2,
+              25.8
+            ],
+            [
+              93.8,
+              25.8
+            ],
+            [
+              93.8,
+              27.2
+            ],
+            [
+              91.2,
+              27.2
+            ],
+            [
+              91.2,
+              25.8
+            ]
+          ]
+        ]
+      },
+      "source_status": "DEMO_CALIBRATED",
+      "download_url": null,
+      "source_url": "https://bhoonidhi.nrsc.gov.in",
+      "file_size_mb": 315.0,
+      "is_demo": true
+    },
+    {
+      "product_id": "NISAR_DEMO_GCOV_20240315_CALIFORNIA_EARLY",
+      "title": "NISAR L-SAR GCOV - San Joaquin Valley (Emergence Phase)",
+      "mission": "NISAR (NASA Segment)",
+      "sensor": "L-SAR",
+      "platform": "NISAR-SIM",
+      "acquisition_date": "2024-03-15T14:10:00Z",
+      "processing_level": "L2_GCOV",
+      "polarization": "QUAD",
+      "orbit_direction": "ASCENDING",
+      "relative_orbit": 98,
+      "footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.8,
+              36.0
+            ],
+            [
+              -118.8,
+              36.0
+            ],
+            [
+              -118.8,
+              37.4
+            ],
+            [
+              -120.8,
+              37.4
+            ],
+            [
+              -120.8,
+              36.0
+            ]
+          ]
+        ]
+      },
+      "source_status": "DEMO_CALIBRATED",
+      "download_url": null,
+      "source_url": "https://nisar.jpl.nasa.gov",
+      "file_size_mb": 540.0,
+      "is_demo": true
+    },
+    {
+      "product_id": "NISAR_DEMO_GCOV_20240722_CALIFORNIA_PEAK",
+      "title": "NISAR L-SAR GCOV - San Joaquin Valley (Full Canopy & Irrigation)",
+      "mission": "NISAR (NASA Segment)",
+      "sensor": "L-SAR",
+      "platform": "NISAR-SIM",
+      "acquisition_date": "2024-07-22T14:10:00Z",
+      "processing_level": "L2_GCOV",
+      "polarization": "QUAD",
+      "orbit_direction": "ASCENDING",
+      "relative_orbit": 98,
+      "footprint_geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.8,
+              36.0
+            ],
+            [
+              -118.8,
+              36.0
+            ],
+            [
+              -118.8,
+              37.4
+            ],
+            [
+              -120.8,
+              37.4
+            ],
+            [
+              -120.8,
+              36.0
+            ]
+          ]
+        ]
+      },
+      "source_status": "DEMO_CALIBRATED",
+      "download_url": null,
+      "source_url": "https://nisar.jpl.nasa.gov",
+      "file_size_mb": 550.0,
+      "is_demo": true
+    }
+  ],
+  "providers": [
+    {
+      "provider_id": "sample",
+      "name": "TERRA//SCOPE Calibrated Reference Demonstrations",
+      "agency": "TERRA//SCOPE Science Testbed",
+      "bands": [
+        "L-band (24 cm)",
+        "C-band (5.6 cm)",
+        "S-band (9.3 cm)"
+      ],
+      "status": "sample_data_active",
+      "auth_required_for_download": false,
+      "free_public_search": true,
+      "description": "Curated, validated radar demonstration datasets derived from verified InSAR and multi-temporal SAR backscatter observations. Labeled for reproducible offline investigation.",
+      "supported_products": [
+        "L2_GUNW",
+        "L2_GCOV",
+        "L3_DISP"
+      ],
+      "reference_url": "https://nisar.jpl.nasa.gov/mission/data-products/"
+    }
+  ]
+}
